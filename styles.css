@@ -79,6 +79,13 @@ main {
     background-color: #98c1d9;
 }
 
+.single-column {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .left-column, .right-column {
