@@ -132,13 +132,30 @@ body {
 }
 
 .hero-inner {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
 }
 
 .hero-left {
-  text-align: center;
+  text-align: left;
   max-width: 720px;
-  margin: 0 auto 2.4rem;
+  margin: 0;
+}
+
+.hero-right {
+  max-width: 320px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-photo-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.2rem;
 }
 
 .eyebrow {
@@ -223,21 +240,6 @@ body {
 
 /* Hero “deck” card */
 
-.hero-right {
-  max-width: 920px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  margin-top: -3rem; /* pulls photo + card up */
-}
-
-
-.hero-photo-wrapper {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 1.2rem;
-}
 
 .sector-card {
   background: #0b1120;
@@ -480,15 +482,19 @@ body {
     gap: 0.4rem;
   }
 
-  .hero-left {
-    margin-bottom: 2rem;
-  }
-
-  .hero-right {
-  align-items: center;
-  margin-top: 1.5rem;
+.hero-inner {
+  display: block;
 }
 
+.hero-left {
+  text-align: center;
+  margin: 0 auto 2rem;
+}
+
+.hero-right {
+  max-width: 260px;
+  margin: 0 auto;
+}
   .hero-photo-wrapper {
   justify-content: center;
     }
