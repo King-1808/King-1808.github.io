@@ -492,6 +492,7 @@ body {
 .hero-right {
   max-width: 260px;
   margin: 0 auto;
+  margin-top: 0.5rem;
 }
   .hero-photo-wrapper {
   justify-content: center;
