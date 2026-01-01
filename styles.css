@@ -133,33 +133,43 @@ body {
 
 .hero-inner {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 2.5rem;
 }
 
 .hero-left {
+  flex: 3;
   text-align: left;
   max-width: 720px;
   margin: 0;
 }
 
 .hero-right {
+  flex: 2;
   max-width: 320px;
   margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 0.5rem; /* adjust to taste */
-  border: 2px solid red;
+  margin-top: 1.5rem; /* controls vertical position of photo + card */
 }
 
 .hero-photo-wrapper {
   display: flex;
   justify-content: center;
   margin-bottom: 1.2rem;
- margin-top: 3rem;
 }
+
+.hero-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ffffff;
+  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.25);
+}
+
 
 .hero-photo {
   width: 170px;
