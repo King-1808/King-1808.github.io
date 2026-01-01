@@ -271,6 +271,23 @@ body {
   border: 1px solid #bfdbfe;
 }
 
+.hero-photo-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1.2rem;
+}
+
+.hero-photo {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ffffff;
+  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.25);
+}
+
+
+
 /* ========== Cards / Grids ========== */
 
 .card-grid {
@@ -457,6 +474,10 @@ body {
   .hero-left {
     margin-bottom: 2rem;
   }
+  .hero-photo-wrapper {
+  justify-content: center;
+    }
+
 }
 
 @media (max-width: 600px) {

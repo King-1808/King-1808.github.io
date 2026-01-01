@@ -1,3 +1,4 @@
+git status
 git add .
-git commit -m "Testing commit"
-git push origin main
+git commit -m "Update homepage to strategy deck layout"
+git push
