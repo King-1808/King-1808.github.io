@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title class="hero-name">Kamal Haidar | IT & Digital Transformation Consultant</title>
+  <title>Kamal Haidar | IT & Digital Transformation Consultant</title>
   <meta
     name="description"
     content="IT & Digital Transformation Consultant, Senior Business Analyst and Project Delivery Lead supporting NGOs, and educational institutions."
@@ -11,14 +11,75 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="favicons/favicon.ico" type="image/x-icon" />
 </head>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('main-nav');
+
+    if (!toggle || !nav) {
+      console.error('Nav toggle or nav element not found');
+      return;
+    }
+
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+      const isOpen = nav.classList.contains('open');
+      toggle.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    nav.addEventListener('click', (e) => {
+      if (e.target.closest('a')) {
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+    document.addEventListener('click', (e) => {
+      const isClickInside = nav.contains(e.target) || toggle.contains(e.target);
+      if (!isClickInside) {
+          nav.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  });
+</script>
+
+<!-- <script>
+  (function () {
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('main-nav');
+    if (!toggle || !nav) return;
+
+    toggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    nav.addEventListener('click', (e) => {
+      const link = e.target.closest('a');
+      if (!link) return;
+      nav.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+  })();
+</script> -->
+
 <body>
+  <div id="top"></div>
   <header class="site-header">
     <div class="container">
       <div class="logo">
-        <span class="logo-mark">KH</span>
-        <span class="logo-text">Kamal Haidar</span>
+        <a href="#top" class="logo">
+            <span class="logo-mark">KH</span>
+            <span class="logo-text">Kamal Haidar</span>
+        </a>
+
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span class="sr-only">Menu</span>
+          ☰
+      </button>
+
+      <nav id="main-nav" class="main-nav">
         <a href="#who-i-work-with">Who I Work With</a>
         <a href="#services">Services</a>
         <a href="#process">How I Work</a>
@@ -39,11 +100,10 @@
             Senior Business Analyst &amp; Project Delivery Lead
           </h1>
           <p class="hero-subtitle">
-            I support NGOs and educational institutions in
-            assessing their current systems, defining realistic Target Operating
-            Models, and preparing for low-risk ERP and digital transformation
-            projects — from <strong>business process assessment</strong> and
-            <strong>BRD/RFP</strong> through to <strong>implementation support</strong>.
+            I support organizations in assessing how they currently operate, 
+            clarifying roles, processes, and systems, and preparing for low-risk
+            ERP and digital transformation initiatives — from <strong>business process 
+            assessment</strong> and <strong>BRD/RFP</strong> through to <strong>implementation support</strong>.
           </p>
 
           <div class="hero-highlights">
@@ -67,9 +127,9 @@
             <div class="sector-card">
               <h3 class="sector-title">Primary Focus Areas</h3>
             <ul>
-              <li><strong>NGOs &amp; INGOs</strong> – ERP, finance, HR, procurement, MEAL and program systems</li>
-              <li><strong>Educational Institutions</strong> – student information, finance, and operations platforms</li>
-              <li><strong>Private Sector</strong> – hotels & resorts, retail chains, trading & distribution, oil & gas distribution, and local government organizations</li>
+              <li><strong>NGOs &amp; INGOs</strong> – Operationally complex, donor-driven organizations with interconnected finance, HR, procurement, MEAL, and program delivery functions.</li>
+              <li><strong>Educational Institutions</strong> – Institutions with layered administrative, academic, and governance structures, where operations, finance, and academic services must work together coherently.</li>
+              <li><strong>Private Sector & Public Organizations</strong> – Process-driven organizations operating across hospitality, retail, trading and distribution, oil and gas distribution, and local government environments.</li>
             </ul>
           </div>
           <div class="sector-metric">
