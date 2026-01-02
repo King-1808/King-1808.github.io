@@ -49,6 +49,8 @@ p { line-height: 1.6; }
 section[id] {
   scroll-margin-top: var(--navOffset);
 }
+
+
 /* ======== Global ========== */
 
 .sr-only{
@@ -508,6 +510,16 @@ section[id] {
   font-size: 0.93rem;
   color: var(--text-muted);
 }
+
+.engagement-section h2 {
+  margin-bottom: 1.6rem;
+}
+
+.engagement-section .section-intro {
+  margin-bottom: 2.2rem;
+  max-width: 720px;
+}
+
 
 /* Hover polish for How I Work cards */
 .process-step {
