@@ -4,81 +4,32 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kamal Haidar | IT & Digital Transformation Consultant</title>
-  <meta
-    name="description"
-    content="IT & Digital Transformation Consultant, Senior Business Analyst and Project Delivery Lead supporting NGOs, and educational institutions."
-  />
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="IT & Digital Transformation Consultant, Senior Business Analyst and Project Delivery Lead supporting organizations with ERP readiness, business process assessment, and implementation support." />
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Kamal Haidar | IT & Digital Transformation Consultant" />
+  <meta property="og:description" content="Supporting organizations with ERP readiness, business process assessment, and digital transformation initiatives." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://kamalhaidar.com" />
+  
   <link rel="icon" href="favicons/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const toggle = document.querySelector('.nav-toggle');
-    const nav = document.getElementById('main-nav');
-
-    if (!toggle || !nav) {
-      console.error('Nav toggle or nav element not found');
-      return;
-    }
-
-    toggle.addEventListener('click', () => {
-      nav.classList.toggle('open');
-      const isOpen = nav.classList.contains('open');
-      toggle.setAttribute('aria-expanded', String(isOpen));
-    });
-
-    nav.addEventListener('click', (e) => {
-      if (e.target.closest('a')) {
-        nav.classList.remove('open');
-        toggle.setAttribute('aria-expanded', 'false');
-      }
-    });
-    document.addEventListener('click', (e) => {
-      const isClickInside = nav.contains(e.target) || toggle.contains(e.target);
-      if (!isClickInside) {
-          nav.classList.remove('open');
-          toggle.setAttribute('aria-expanded', 'false');
-      }
-    });
-  });
-</script>
-
-<!-- <script>
-  (function () {
-    const toggle = document.querySelector('.nav-toggle');
-    const nav = document.getElementById('main-nav');
-    if (!toggle || !nav) return;
-
-    toggle.addEventListener('click', () => {
-      const isOpen = nav.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', String(isOpen));
-    });
-
-    nav.addEventListener('click', (e) => {
-      const link = e.target.closest('a');
-      if (!link) return;
-      nav.classList.remove('open');
-      toggle.setAttribute('aria-expanded', 'false');
-    });
-  })();
-</script> -->
-
 <body>
   <div id="top"></div>
+  
   <header class="site-header">
     <div class="container">
-      <div class="logo">
-        <a href="#top" class="logo">
-            <span class="logo-mark">KH</span>
-            <span class="logo-text">Kamal Haidar</span>
-        </a>
-
-      </div>
+      <a href="#top" class="logo">
+        <span class="logo-mark">KH</span>
+        <span class="logo-text">Kamal Haidar</span>
+      </a>
+      
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
         <span class="sr-only">Menu</span>
-          ☰
+        ☰
       </button>
-
+      
       <nav id="main-nav" class="main-nav">
         <a href="#who-i-work-with">Who I Work With</a>
         <a href="#services">Services</a>
@@ -91,58 +42,57 @@
 
   <main>
     <!-- HERO -->
-    <section class="hero" id="top">
+    <section class="hero">
       <div class="hero-inner container">
         <div class="hero-left">
           <p class="eyebrow">Kamal Haidar</p>
           <h1>
-            IT &amp; Digital Transformation Consultant<br />
-            Senior Business Analyst &amp; Project Delivery Lead
+            IT & Digital Transformation Consultant<br />
+            Senior Business Analyst & Project Delivery Lead
           </h1>
           <p class="hero-subtitle">
-            I support organizations in assessing how they currently operate, 
-            clarifying roles, processes, and systems, and preparing for low-risk
-            ERP and digital transformation initiatives — from <strong>business process 
-            assessment</strong> and <strong>BRD/RFP</strong> through to <strong>implementation support</strong>.
+            I support organizations in assessing how they currently operate, clarifying roles, processes, and systems, and preparing for low-risk ERP and digital transformation initiatives — from <strong>business process assessment</strong> and <strong>BRD/RFP</strong> through to <strong>implementation support</strong>.
           </p>
 
           <div class="hero-highlights">
-            <div class="hero-chip">Business Process &amp; ERP Readiness</div>
-            <div class="hero-chip">NGO &amp; INGO Systems Advisory</div>
+            <div class="hero-chip">Business Process & ERP Readiness</div>
+            <div class="hero-chip">NGO & INGO Systems Advisory</div>
             <div class="hero-chip">Digital Transformation Roadmaps</div>
           </div>
 
           <div class="hero-cta">
-            <!-- <a href="#contact" class="btn-primary">Schedule a discussion</a>
-            <a href="mailto:contact@kamalhaidar.com" class="btn-secondary">
-              Contact via email
-            </a> -->
             <a href="mailto:haidar.kamal@gmail.com" class="btn-primary">
-              Start a discussion
+              Start a Discussion
             </a>
-
           </div>
         </div>
 
         <aside class="hero-right">
-            <div class="hero-photo-wrapper">
-                <img src="images/Kamal.jpg" alt="Kamal Haidar" class="hero-photo" />
-            </div>
-            <div class="sector-card">
-              <h3 class="sector-title">Primary Focus Areas</h3>
+          <div class="hero-photo-wrapper">
+            <img src="images/Kamal.jpg" alt="Kamal Haidar" class="hero-photo" />
+          </div>
+          
+          <div class="sector-card">
+            <h3 class="sector-title">Primary Focus Areas</h3>
             <ul>
-              <li><strong>Educational Institutions</strong> <br/> Institutions with layered administrative, academic, and governance structures, where operations, finance, and academic services must work together coherently.</li>
-              <li><strong>NGOs &amp; INGOs</strong> <br/> Organizations operating in donor-driven, multi-stakeholder environments with interconnected finance, HR, procurement, MEAL, and program delivery functions.</li>
-              <li><strong>Private Sector & Public Organizations</strong> <br/> Process-oriented organizations operating across hospitality, retail, trading and distribution, oil and gas distribution, and local government environments.</li>
+              <li>
+                <strong>Educational Institutions</strong><br/>
+                Institutions with layered administrative, academic, and governance structures, where operations, finance, and academic services must work together coherently.
+              </li>
+              <li>
+                <strong>NGOs & INGOs</strong><br/>
+                Organizations operating in donor-driven, multi-stakeholder environments with interconnected finance, HR, procurement, MEAL, and program delivery functions.
+              </li>
+              <li>
+                <strong>Private Sector & Public Organizations</strong><br/>
+                Process-oriented organizations operating across hospitality, retail, trading and distribution, oil and gas distribution, and local government environments.
+              </li>
             </ul>
           </div>
+          
           <div class="sector-metric">
-            <!-- <p>
-              From <span>As-Is analysis</span> to <span>go-live support</span> with a
-              delivery-focused, consulting-grade approach.
-            </p> -->
             <p>
-            From <span>As-Is assessment</span> through <span> assurance</span>, with a structured, consulting-grade approach.
+              From <span>As-Is assessment</span> through <span>delivery assurance</span>, with a structured, consulting-grade approach.
             </p>
           </div>
         </aside>
@@ -152,7 +102,8 @@
     <!-- WHO I WORK WITH -->
     <section id="who-i-work-with" class="section section-light">
       <div class="container">
-        <h2 class="section-title">Who I Work With</h2>
+        <h2>Who I Work With</h2>
+        
         <div class="ww-grid">
           <div class="ww-card">
             <h3>Executive Leadership</h3>
@@ -163,28 +114,26 @@
             <h3>Department & Functional Heads</h3>
             <p>Finance, HR, operations, programs, and core business leaders seeking alignment, clarity, and improved organizational effectiveness across complex environments.</p>
           </div>
+
           <div class="ww-card">
             <h3>Boards, Committees & Steering Groups</h3>
             <p>Governance bodies and cross-functional committees overseeing major initiatives, system modernization, and organizational change.</p>
           </div>
-
         </div>
       </div>
     </section>
 
     <!-- SERVICES -->
-    <section id="services" class="section section-plain">
+    <section id="services" class="section">
       <div class="container">
         <h2>How I Help</h2>
         <p class="section-intro">
-          I bridge business, technology, and delivery by helping organizations understand their current operating reality, 
-          make informed decisions, and execute transformation initiatives with clarity and control — from early assessment 
-          through vendor selection, implementation oversight, and user readiness.
+          I bridge business, technology, and delivery by helping organizations understand their current operating reality, make informed decisions, and execute transformation initiatives with clarity and control — from early assessment through vendor selection, implementation oversight, and user readiness.
         </p>
 
         <div class="services-layout">
           <div class="services-column">
-            <h3>Analysis &amp; Design</h3>
+            <h3>Analysis & Design</h3>
             <ul>
               <li>Current-state and target-state process assessment (As-Is / To-Be)</li>
               <li>Organizational and systems gap analysis</li>
@@ -192,155 +141,174 @@
               <li>Digital transformation and implementation roadmaps</li>
               <li>Data governance and master data design foundations</li>
             </ul>
-
           </div>
 
           <div class="services-column">
-            <h3>Requirements &amp; Selection</h3>
+            <h3>Requirements & Selection</h3>
             <ul>
-                <li>Business and functional requirements definition, including integration blueprint (BRD)</li>
-                <li>RFP preparation, vendor evaluation, and selection support</li>
-          </ul>
+              <li>Business and functional requirements definition, including integration blueprint (BRD)</li>
+              <li>RFP preparation, vendor evaluation, and selection support</li>
             </ul>
           </div>
 
           <div class="services-column">
-            <h3>Delivery &amp; Change</h3>
+            <h3>Delivery & Change</h3>
             <ul>
               <li>Implementation oversight and delivery assurance</li>
               <li>Project governance and coordination support</li>
               <li>Change management and user readiness planning</li>
-              <li>Cutover and post–go-live transition planning</li>
+              <li>Cutover and post-go-live transition planning</li>
             </ul>
-
           </div>
         </div>
       </div>
     </section>
 
     <!-- HOW I WORK -->
-    <section id="process" class="section engagement-section" >
+    <section id="process" class="section section-light">
       <div class="container">
-          <h2>How a Typical Engagement Works</h2>
-          <p class="section-intro">
-            Engagements are structured to be focused, pragmatic, and low-disruption, providing clarity and decision support at each stage of the transformation journey.
-          </p>
-          <div class="process-grid">
-            <div class="process-step">
-              <span class="step-badge">1</span>
-              <h3>Discovery &amp; Current State</h3>
-              <p>
-                Short, focused engagements to understand how the organization operates today,
-                including decision structures, constraints, and supporting systems — without
-                disrupting day-to-day operations.
-              </p>
-            </div>
+        <h2>How a Typical Engagement Works</h2>
+        <p class="section-intro">
+          Engagements are structured to be focused, pragmatic, and low-disruption, providing clarity and decision support at each stage of the transformation journey.
+        </p>
+
+        <div class="process-grid">
           <div class="process-step">
-          <span class="step-badge">2</span>
-          <h3>Target State &amp; Roadmap</h3>
-          <p>
-            Define realistic target processes, prioritize capabilities, and agree on a
-            phased roadmap aligned with organizational capacity, resources, and risk appetite.
-          </p>
-      </div>
+            <span class="step-badge">1</span>
+            <h3>Discovery & Current State</h3>
+            <p>
+              Short, focused engagements to understand how the organization operates today, including decision structures, constraints, and supporting systems — without disrupting day-to-day operations.
+            </p>
+          </div>
+
+          <div class="process-step">
+            <span class="step-badge">2</span>
+            <h3>Target State & Roadmap</h3>
+            <p>
+              Define realistic target processes, prioritize capabilities, and agree on a phased roadmap aligned with organizational capacity, resources, and risk appetite.
+            </p>
+          </div>
+
           <div class="process-step">
             <span class="step-badge">3</span>
-            <h3>Selection &amp; Delivery Assurance</h3>
+            <h3>Selection & Delivery Assurance</h3>
             <p>
-              Support RFP processes, vendor evaluation, and implementation oversight to ensure
-              scope, quality, governance, and change readiness are addressed throughout delivery.
+              Support RFP processes, vendor evaluation, and implementation oversight to ensure scope, quality, governance, and change readiness are addressed throughout delivery.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-<!-- ABOUT & CREDENTIALS -->
-<section id="about" class="section section-plain">
-  <div class="container">
-    <h2>About &amp; Credentials</h2>
-    <p class="section-intro">
-        I support organizations executing complex initiatives that require clarity, stakeholder alignment, and disciplined <br/>
-         delivery — from early assessment through implementation assurance.
-    </p>
-    <div class="about-grid">
-      <!-- Left: About / Focus -->
-      <div class="about-copy">
-        <h3>Consulting Focus</h3>
-        <ul>
-          <li>Operational assessment and target-state design (processes, roles, and governance)</li>
-          <li>ERP and core systems modernization readiness and planning</li>
-          <li>Requirements, integration thinking, and decision support for selection</li>
-          <li>Delivery assurance, change readiness, and execution control</li>
-        </ul>
-      </div>
+    <!-- ABOUT & CREDENTIALS -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About & Credentials</h2>
+        <p class="section-intro">
+          I support organizations executing complex initiatives that require clarity, stakeholder alignment, and disciplined delivery — from early assessment through implementation assurance.
+        </p>
 
-      <!-- Right: Credentials -->
-      <aside class="about-cred">
-        <div class="cred-card">
-          <h3>Credentials</h3>
-
-          <div class="cred-block">
-            <h4>Education</h4>
+        <div class="about-grid">
+          <div class="about-copy">
+            <h3>Consulting Focus</h3>
             <ul>
-              <li>Master of Science (MS) – Computer Science, Lebanese American University (LAU)</li>
-              <li>Bachelor of Science (BSc) – Computer Science, Lebanese American University (LAU)</li>
+              <li>Operational assessment and target-state design (processes, roles, and governance)</li>
+              <li>ERP and core systems modernization readiness and planning</li>
+              <li>Requirements, integration thinking, and decision support for selection</li>
+              <li>Delivery assurance, change readiness, and execution control</li>
             </ul>
           </div>
 
-          <div class="cred-block">
-            <h4>Certifications</h4>
-            <ul>
-              <li><strong>PMP®</strong> – Project Management Professional</li>
-              <li><strong>ITIL®</strong> – IT Service Management Foundation</li>
-            </ul>
-          </div>
+          <aside class="about-cred">
+            <div class="cred-card">
+              <h3>Credentials</h3>
+              
+              <div class="cred-block">
+                <h4>Education</h4>
+                <ul>
+                  <li>Master of Science (MS) – Computer Science, Lebanese American University (LAU)</li>
+                  <li>Bachelor of Science (BSc) – Computer Science, Lebanese American University (LAU)</li>
+                </ul>
+              </div>
+
+              <div class="cred-block">
+                <h4>Certifications</h4>
+                <ul>
+                  <li><strong>PMP®</strong> – Project Management Professional</li>
+                  <li><strong>ITIL®</strong> – IT Service Management Foundation</li>
+                </ul>
+              </div>
+            </div>
+          </aside>
         </div>
-      </aside>
-    </div>
-  </div>
-</section>
-
+      </div>
+    </section>
 
     <!-- CONTACT -->
     <section id="contact" class="section section-cta">
       <div class="container cta-inner">
         <div class="cta-text">
-          <h2>Let’s discuss your next initiative</h2>
+          <h2>Let's Discuss Your Next Initiative</h2>
           <p>
-              If you are preparing for an ERP selection, addressing fragmented systems, or
-              seeking a clear, realistic roadmap, we can start with a focused discussion on
-              your current situation and practical next steps.
+            If you are preparing for an ERP selection, addressing fragmented systems, or seeking a clear, realistic roadmap, we can start with a focused discussion on your current situation and practical next steps.
           </p>
         </div>
+        
         <div class="cta-actions">
           <p class="cta-line">
-            Email:
-            <a href="mailto:haidar.kamal@gmail.com">haidar.kamal@gmail.com</a>
-            <!-- Update to your actual email if different -->
+            <strong>Email:</strong> <a href="mailto:haidar.kamal@gmail.com">haidar.kamal@gmail.com</a>
           </p>
           <p class="cta-line">
-            LinkedIn:
-            <a href="https://www.linkedin.com/in/kamalhaidar/" target="_blank" rel="noopener">
-              linkedin.com/in/kamalhaidar
-            </a>
+            <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kamalhaidar/" target="_blank" rel="noopener">linkedin.com/in/kamalhaidar</a>
           </p>
           <a href="mailto:haidar.kamal@gmail.com" class="btn-primary">
-            Start a discussion
+            Start a Discussion
           </a>
         </div>
       </div>
     </section>
-
   </main>
 
-<footer class="footer">
-  <div class="container footer-inner">
-    <span>© 2026 Kamal Haidar</span>
-    <span class="footer-separator">•</span>
-    <span>IT &amp; Digital Transformation Consultant</span>
-  </div>
-</footer>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span>© 2025 Kamal Haidar</span>
+        <span class="footer-separator">•</span>
+        <span>IT & Digital Transformation Consultant</span>
+      </div>
+    </div>
+  </footer>
 
+  <script>
+    // Mobile menu toggle
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggle = document.querySelector('.nav-toggle');
+      const nav = document.getElementById('main-nav');
+      
+      if (!toggle || !nav) return;
+      
+      toggle.addEventListener('click', function() {
+        const isOpen = nav.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', String(isOpen));
+      });
+      
+      // Close menu when clicking a link
+      nav.addEventListener('click', function(e) {
+        if (e.target.closest('a')) {
+          nav.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+      
+      // Close menu when clicking outside
+      document.addEventListener('click', function(e) {
+        const isClickInside = nav.contains(e.target) || toggle.contains(e.target);
+        if (!isClickInside && nav.classList.contains('open')) {
+          nav.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
