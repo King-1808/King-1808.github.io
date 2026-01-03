@@ -198,7 +198,7 @@
     .hero {
       padding: 3rem 0 3.5rem;
     }
-
+ 
     .hero-inner {
       display: flex;
       align-items: flex-start;
@@ -248,7 +248,7 @@
     }
 
     .hero h1 {
-      font-size: 2.5rem;
+      font-size: 2.4rem;
       line-height: 1.2;
       margin: 0 0 1rem;
       background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
